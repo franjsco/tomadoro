@@ -1,5 +1,5 @@
 body {
-  background-color: #d9534f;
+  background-color: #db4f4a;
 }
 
 .title {
@@ -13,26 +13,21 @@ body {
 }
 
 .App-header {
-  background-color: #d9534f;
+  background-color: #c34944;
   display: flex;
-  min-height: 20vh;
+  min-height: 10vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(50px + 2vmin);
+  font-size: calc(40px + 2vmin);
   color: white;
   text-shadow: 0 0 2px #cf4242, 0 0 4px #2B2D1F;
+  margin-bottom: 25px;
+  box-shadow: 0 0 2px #cf4242, 0 0 8px #2B2D1F;
+
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

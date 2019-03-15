@@ -2,11 +2,16 @@
   "name": "tomadoro",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.4.1",
+    "node": "10.15.0"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-scripts": "2.1.8",
+    "react-web-notification": "^0.5.0",
     "reactstrap": "^7.1.0"
   },
   "scripts": {

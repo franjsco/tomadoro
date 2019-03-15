@@ -3,35 +3,33 @@
     font-weight: 600;
     text-shadow: 0 0 2px #cf4242, 0 0 4px #2B2D1F;
     color: white;
-    opacity: 1;
 }
 
 .buttons {
-    font-size: 22px;
-    font-weight: bold;
-    height: 70px;
-    border-radius: 30px;
-    box-shadow: 0 0 1px #03030349, 0 0 10px rgb(155, 156, 150);
-    opacity: 0.9;   
+    font-size: 20px;
+    font-weight: normal;
+    height: 60px;
+    border-radius: 25px;
+    box-shadow:  0 0 5px #161616, 0 0 2px #2B2D1F;
+    opacity: 0.9;
 }
 
-.top-buffer {
-    margin-top: 15px;
+.top-margin {
+    margin-top: 18px;
 }
 
 .buttons-box {
-    background-color: rgba(255, 255, 255, 0.9);		/* transparent */
+    background-color: rgba(255, 255, 255, 1.0);
     padding: 20px;
     margin-top: 5px;
-    border-radius: 30px;
-    opacity: 1;
-    box-shadow: 0 0 2px #cf4242, 0 0 5px rgb(243, 243, 243);
+    border-radius: 25px;
+    box-shadow: 0 0 1px #cf4242, 0 0 10px #2B2D1F;
 }
 
 .App-logo {
     height: 25vmin;
     pointer-events: none;
-    filter: drop-shadow(0 0 1.00rem rgb(211, 204, 206));
+    filter: drop-shadow(0 0 0.30rem rgb(250, 223, 174));
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -50,14 +48,4 @@
     to {
       transform: rotate(360deg);
     }
-  }
-
-
-.App-logo-scale {
-    animation: crescendo 0.5s alternate infinite ease-in;
-}
-
-@keyframes crescendo {
-    0%   {transform: scale(.8);}
-    100% {transform: scale(1.2);}
   }
