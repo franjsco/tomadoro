@@ -10,6 +10,12 @@ class App extends Component {
         tomadoro
       </div>
        <Timer />
+       <div className="footer">
+        <p>
+          <a href="https://github.com/frab1t/tomadoro">tomadoro</a>{` `}
+          by <a href="https://twitter.com/frab1t">@frab1t</a> (Francesco Esposito)
+        </p>
+      </div>
       </div>
     );
   }
