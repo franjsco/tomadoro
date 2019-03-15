@@ -31,6 +31,10 @@ a {
   color: #f1fb61;
 }
 
+a:hover {
+  color: #fddec0;
+}
+
 .footer {
   margin-top: 15px;
   color: #ffffff;
