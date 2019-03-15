@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
-import { Button } from 'reactstrap';
+import { Button, Container, Row, Col } from 'reactstrap';
 import './Timer.css';
+import logo from '../logo.svg';
+
 
 class Timer extends Component {
-
-
   constructor(props) {
     super(props);
     this.defaultSeconds = 1500;
+    this.defaultLogoSpin = 'App-logo-rotation';
     this.state = { 
       seconds: this.defaultSeconds,
-      started: false
+      started: false,
+      logoSpin: ''
     };
     this.startTimer = this.startTimer.bind(this);
     this.stopTimer = this.stopTimer.bind(this);
@@ -26,12 +28,18 @@ class Timer extends Component {
   }
 
   startTimer() {
-    this.setState({ started: true })
+    this.setState({ 
+      started: true,
+      logoSpin: this.defaultLogoSpin
+    });
     this.interval = setInterval(() => this.tick(), 1000);
   }
   
   stopTimer() {
-    this.setState({ started: false });
+    this.setState({ 
+      started: false,
+      logoSpin: null
+     });
     clearInterval(this.interval);
   }
 
@@ -43,35 +51,66 @@ class Timer extends Component {
   render() {
     return (
       <div className="App">
-        
-        <p class="timer">{this.fmtMSS(this.state.seconds)}</p>
-        
-        <Button 
-          size="lg"
-          color="success"
-          onClick={this.startTimer}
-          disabled={this.state.started}
-        >
-          START
-        </Button>
-
-        <Button 
+        <Container>
+        <Row>
+          <Col>
+            <img className={`App-logo ${this.state.logoSpin}`} src={logo}/>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+          <p 
+            class="timer"
+          >
+            {this.fmtMSS(this.state.seconds)}
+          </p>
+          </Col>
+        </Row>
+        <div className="buttons-box">
+        <Row>
+          <Col>
+          <Button 
+            className="buttons" 
+            block
+            size="lg"
+            color="success"
+            onClick={this.startTimer}
+            disabled={this.state.started}
+          >
+            Start
+          </Button>
+          </Col>
+        </Row>
+        <Row  className="top-buffer">
+          <Col>
+          <Button 
+          className="buttons"
+          block
           color="danger"
           size="lg"
           onClick={this.stopTimer}
           disabled={!this.state.started}
-        >
-          STOP
-        </Button>
+          >
+            Stop
+          </Button>
+          </Col>
 
-        <Button
-          color="secondary"
-          size="lg"
-          onClick={this.resetTimer}
-          disabled={this.state.started}
-        >
-          RESET
-        </Button>
+          <Col>
+          <Button 
+            className="buttons" 
+            block
+            color="secondary"
+            size="lg"
+            onClick={this.resetTimer}
+            disabled={this.state.started}
+          >
+            Reset
+          </Button>
+          </Col>
+        </Row>
+    
+        </div>
+        </Container>
       </div>
     );
   }
