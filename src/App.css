@@ -4,7 +4,7 @@ body {
 
 .title {
   font-size: 60px;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .App {
@@ -21,13 +21,19 @@ body {
   justify-content: center;
   font-size: calc(40px + 2vmin);
   color: white;
-  text-shadow: 0 0 2px #cf4242, 0 0 4px #2B2D1F;
+  text-shadow: 0 0 1px #ce2e2e, 0 0 10px rgb(193, 194, 190);
   margin-bottom: 25px;
   box-shadow: 0 0 2px #cf4242, 0 0 8px #2B2D1F;
 
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  color: #f1fb61;
+}
+
+.footer {
+  margin-top: 15px;
+  color: #ffffff;
+  text-shadow: 0 0 2px #cf4242, 0 0 3px rgb(193, 194, 190);
 }
 

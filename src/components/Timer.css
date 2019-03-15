@@ -1,17 +1,16 @@
 .timer {
     font-size: 120px; 
     font-weight: 600;
-    text-shadow: 0 0 2px #cf4242, 0 0 4px #2B2D1F;
+    text-shadow: 0 0 1px #ce2e2e, 0 0 8px rgb(193, 194, 190);
     color: white;
 }
 
 .buttons {
     font-size: 20px;
-    font-weight: normal;
+    font-weight: bold;
     height: 60px;
     border-radius: 25px;
-    box-shadow:  0 0 5px #161616, 0 0 2px #2B2D1F;
-    opacity: 0.9;
+    box-shadow:  0 0 1px #161616, 0 0 10px rgb(133, 133, 133);
 }
 
 .top-margin {
@@ -23,13 +22,13 @@
     padding: 20px;
     margin-top: 5px;
     border-radius: 25px;
-    box-shadow: 0 0 1px #cf4242, 0 0 10px #2B2D1F;
+    box-shadow:0 0 1px #111010, 0 0 10px rgb(193, 194, 190);
 }
 
 .App-logo {
     height: 25vmin;
     pointer-events: none;
-    filter: drop-shadow(0 0 0.30rem rgb(250, 223, 174));
+    filter: drop-shadow(0 0 0.50rem #f8ff9c);
     align-items: center;
     justify-content: center;
     text-align: center;
