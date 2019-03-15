@@ -1,5 +1,6 @@
 {
   "name": "tomadoro",
+  "description": "tomadoro",
   "version": "0.1.0",
   "private": true,
   "engines": {
@@ -28,5 +29,12 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frab1t/tomadoro.git"
+  },
+  "author": "frab1t",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/frab1t/tomadoro#readme"
 }
