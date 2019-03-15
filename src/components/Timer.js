@@ -9,7 +9,7 @@ import sound from '../sound.mp3';
 class Timer extends Component {
   constructor(props) {
     super(props);
-    this.defaultSeconds = 4;
+    this.defaultSeconds = 1500;
     this.defaultLogoSpin = 'App-logo-rotation';
     this.state = { 
       seconds: this.defaultSeconds,
