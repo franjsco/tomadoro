@@ -1,12 +1,11 @@
 # tomadoro
 A timer based on Pomodoro Technique
 
-<img src="screenshot.png">
+![tomadoro screenshot](screenshot.png)
 
 Technologies: 
-* HTML5
-* CSS3
-* js
+* HTML5 and CSS
+* JavaScript 
 * React.js
 
 ## Demo
