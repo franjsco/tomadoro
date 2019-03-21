@@ -19,7 +19,7 @@ class ButtonBox extends Component {
               size="lg"
               color="success"
               onClick={this.props.startTimer}
-              disabled={this.props.isStarted}
+              disabled={this.props.isStarted || this.props.seconds===0}
             >
               START
             </Button>
