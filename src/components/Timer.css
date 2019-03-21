@@ -13,11 +13,8 @@
     box-shadow:  0 0 1px #161616, 0 0 10px rgb(133, 133, 133);
 }
 
-.top-margin {
-    margin-top: 18px;
-}
 
-.buttons-box {
+.button-box {
     background-color: rgba(255, 255, 255, 1.0);
     padding: 20px;
     margin-top: 5px;
