@@ -1,5 +1,5 @@
 # tomadoro
-A timer based on Pomodoro Technique
+A timer based on the Pomodoro Technique
 
 ![tomadoro screenshot](screenshot.png)
 
