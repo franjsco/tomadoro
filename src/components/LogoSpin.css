@@ -1,3 +1,7 @@
+img {
+  pointer-events: none;
+}
+
 .App-logo {
     height: 25vmin;
     pointer-events: none;
