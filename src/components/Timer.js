@@ -2,20 +2,17 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Notification from 'react-web-notification';
 import ButtonBox from './ButtonBox';
+import LogoSpin from './LogoSpin';
 import './Timer.css';
-import logo from '../logo.svg';
 import sound from '../sound.mp3';
 
 
 class Timer extends Component {
   constructor(props) {
     super(props);
-    this.seconds = 1500;
-    this.logoSpingCSS = 'App-logo-rotation';
-    this.state = { 
-      seconds: this.seconds,
+    this.state = {
+      seconds: 1500,
       started: false,
-      logoSpin: '',
       ignore: true,
       title: ''
     };
@@ -30,9 +27,9 @@ class Timer extends Component {
     this.handleNotificationOnShow = this.handleNotificationOnShow.bind(this);
     this.playSound = this.playSound.bind(this);
   }
-  
-  formatMinute(s){
-    return ( s - ( s%=60 )) / 60 + ( 9 < s ?':':':0') +s;
+
+  formatMinute(s) {
+    return (s - (s %= 60)) / 60 + (9 < s ? ':' : ':0') + s;
   }
 
 
@@ -54,7 +51,7 @@ class Timer extends Component {
     });
   }
 
-  handleNotificationOnError(e, tag){
+  handleNotificationOnError(e, tag) {
     console.log(e, 'Notification error tag:' + tag);
   }
 
@@ -75,7 +72,7 @@ class Timer extends Component {
       tag: tag,
       body: body,
       lang: 'en',
-      sound: {sound}
+      sound: { sound }
     };
 
     this.setState({
@@ -84,14 +81,14 @@ class Timer extends Component {
     });
   }
 
-  playSound(){
+  playSound() {
     document.getElementById('sound').play();
   }
 
 
   tick() {
     this.setState(state => ({
-      seconds: state.seconds -1
+      seconds: state.seconds - 1
     }));
 
     if (this.state.seconds <= 0) {
@@ -102,28 +99,22 @@ class Timer extends Component {
   }
 
   startTimer() {
-    this.setState({ 
-      started: true,
-      logoSpin: this.logoSpingCSS
+    this.setState({
+      started: true
     });
     this.interval = setInterval(() => this.tick(), 1000);
   }
-  
+
   stopTimer() {
-    this.setState({ 
-      started: false,
-      logoSpin: null
-     });
+    this.setState({
+      started: false
+    });
     clearInterval(this.interval);
   }
 
   resetTimer() {
     this.stopTimer();
-    this.setState({ seconds: this.seconds});
-  }
-
-  isStarted() {
-    return this.state.started;
+    this.setState({ seconds: 1500 });
   }
 
   render() {
@@ -132,31 +123,29 @@ class Timer extends Component {
         <Container>
           <Row>
             <Col>
-              <img 
-                className={`App-logo ${this.state.logoSpin}`} 
-                src={logo}
-                alt="Tomato"
-              ></img>
+              <LogoSpin
+                isStarted={this.state.started}
+              />
             </Col>
-          </Row>  
+          </Row>
 
           <Row>
             <Col>
-            <p 
-              className="timer"
-            >
-              {this.formatMinute(this.state.seconds)}
-            </p>
+              <p
+                className="timer"
+              >
+                {this.formatMinute(this.state.seconds)}
+              </p>
             </Col>
           </Row>
- 
+
           <Row>
             <Col>
-              <ButtonBox 
-                startTimer = {this.startTimer}
-                stopTimer = {this.stopTimer}
-                isStarted = {this.state.started}
-                resetTimer = {this.resetTimer}
+              <ButtonBox
+                startTimer={this.startTimer}
+                stopTimer={this.stopTimer}
+                isStarted={this.state.started}
+                resetTimer={this.resetTimer}
               />
             </Col>
           </Row>
@@ -164,14 +153,14 @@ class Timer extends Component {
 
         <Notification
           ignore={this.state.ignore}
-          onPermissionGranted = {this.handlePermissionGranted}
-          onPermissionDenied = {this.handlePermissionDenied}
-          notSupported = {this.handleNotSupported}
-          onError = {this.onError}
-          timeout = {5000}
-          title = {this.state.title}
-          options = {this.state.options}
-          onShow = {this.handleNotificationOnShow}
+          onPermissionGranted={this.handlePermissionGranted}
+          onPermissionDenied={this.handlePermissionDenied}
+          notSupported={this.handleNotSupported}
+          onError={this.onError}
+          timeout={5000}
+          title={this.state.title}
+          options={this.state.options}
+          onShow={this.handleNotificationOnShow}
         >
         </Notification>
 
@@ -179,7 +168,7 @@ class Timer extends Component {
           <source src={sound} type='audio/mpeg' />
           <embed hidden src={sound} />
         </audio>
-        
+
       </div>
     );
   }

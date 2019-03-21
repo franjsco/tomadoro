@@ -1,0 +1,23 @@
+.App-logo {
+    height: 25vmin;
+    pointer-events: none;
+    filter: drop-shadow(0 0 0.50rem #f8ff9c);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.App-logo-rotation {
+    animation: App-logo-spin infinite 5s linear;
+  }
+
+
+  
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
