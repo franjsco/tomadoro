@@ -9,10 +9,9 @@ class Timer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      seconds: 4,
+      seconds: 1500,
       started: false,
-      send: false,
-      title: ''
+      send: false
     };
 
     this.handleNotification = this.handleNotification.bind(this);
