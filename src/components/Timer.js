@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col } from 'reactstrap';
 import Notification from 'react-web-notification';
+import ButtonBox from './ButtonBox';
 import './Timer.css';
 import logo from '../logo.svg';
 import sound from '../sound.mp3';
@@ -121,6 +122,9 @@ class Timer extends Component {
     this.setState({ seconds: this.seconds});
   }
 
+  isStarted() {
+    return this.state.started;
+  }
 
   render() {
     return (
@@ -145,54 +149,16 @@ class Timer extends Component {
             </p>
             </Col>
           </Row>
-
-          <div className="buttons-box">
-            <Row>
-              <Col>
-                <Button
-                  className="buttons" 
-                  block
-                  size="lg"
-                  color="success"
-                  onClick={this.startTimer}
-                  disabled={this.state.started}
-                >
-                  START
-                </Button>
-              </Col>
-            </Row>
-
-            <Row  
-              className="top-margin"
-            >
-              <Col>
-                <Button
-                  className="buttons"
-                  block
-                  color="danger"
-                  size="lg"
-                  onClick={this.stopTimer}
-                  disabled={!this.state.started}
-                >
-                  STOP
-                </Button>
-              </Col>
-
-              <Col>
-                <Button
-                  className="buttons" 
-                  block
-                  color="secondary"
-                  size="lg"
-                  onClick={this.resetTimer}
-                  disabled={this.state.started || this.state.seconds === this.seconds}
-                >
-                  RESET
-                </Button>
-              </Col>
-            </Row>
-          </div>
+ 
           <Row>
+            <Col>
+              <ButtonBox 
+                startTimer = {this.startTimer}
+                stopTimer = {this.stopTimer}
+                isStarted = {this.state.started}
+                resetTimer = {this.resetTimer}
+              />
+            </Col>
           </Row>
         </Container>
 
