@@ -8,6 +8,7 @@ import './Timer.css';
 class Timer extends Component {
   constructor(props) {
     super(props);
+    this.appName = 'tomadoro';
     this.state = {
       seconds: 0,
       started: false,
@@ -46,6 +47,8 @@ class Timer extends Component {
       seconds: state.seconds - 1
     }));
 
+    document.title=`(${this.formatMinute(this.state.seconds)}) ${this.appName}`; 
+
     if (this.state.seconds === 0) {
       this.stopTimer();
       this.finishedTimer();
@@ -74,6 +77,8 @@ class Timer extends Component {
     } else {
       this.pomodoroMode();
     }
+
+    document.title = this.appName;
   }
 
   finishedTimer() {
