@@ -1,5 +1,6 @@
 body {
   background-color: #db4f4a;
+  user-select: none;
 }
 
 .title {
