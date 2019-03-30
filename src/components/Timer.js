@@ -8,21 +8,33 @@ import './Timer.css';
 class Timer extends Component {
   constructor(props) {
     super(props);
+    this.appName = 'tomadoro';
     this.state = {
-      seconds: 1500,
+      seconds: 0,
       started: false,
-      send: false
+      break: false,
+      sendNotification: false
     };
 
     this.handleNotification = this.handleNotification.bind(this);
     this.startTimer = this.startTimer.bind(this);
     this.stopTimer = this.stopTimer.bind(this);
     this.resetTimer = this.resetTimer.bind(this);
+    this.finishedTimer = this.finishedTimer.bind(this);
+    this.switchMode = this.switchMode.bind(this);
+    this.pomodoroMode = this.pomodoroMode.bind(this);
+    this.breakMode = this.breakMode.bind(this);
+
   }
+
+  componentWillMount() {
+    this.pomodoroMode();
+  }
+
 
   handleNotification(flag) {
     this.setState({
-      send: flag
+      sendNotification: flag
     });
   }
 
@@ -35,11 +47,11 @@ class Timer extends Component {
       seconds: state.seconds - 1
     }));
 
-    if (this.state.seconds <= 0) {
+    document.title=`(${this.formatMinute(this.state.seconds)}) ${this.appName}`; 
+
+    if (this.state.seconds === 0) {
       this.stopTimer();
-      this.setState({
-        send: true
-      });
+      this.finishedTimer();
     }
   }
 
@@ -47,6 +59,7 @@ class Timer extends Component {
     this.setState({
       started: true
     });
+
     this.interval = setInterval(() => this.tick(), 1000);
   }
 
@@ -54,12 +67,50 @@ class Timer extends Component {
     this.setState({
       started: false
     });
+
     clearInterval(this.interval);
   }
 
   resetTimer() {
-    this.stopTimer();
-    this.setState({ seconds: 1500 });
+    if(this.state.break) {
+      this.breakMode();
+    } else {
+      this.pomodoroMode();
+    }
+
+    document.title = this.appName;
+  }
+
+  finishedTimer() {
+    this.setState({
+      sendNotification: true,
+    });
+    this.switchMode();
+  }
+
+  switchMode() {
+    if(this.state.break && !this.state.started) {
+      this.pomodoroMode();
+    } else if(!this.state.break && !this.state.started) {
+      this.breakMode();
+    }
+  }
+
+
+  pomodoroMode() {
+    const pomodoroSeconds = 1500;
+    this.setState({
+      seconds: pomodoroSeconds,
+      break: false
+    });
+  }
+
+  breakMode() {
+    const breakSeconds = 300
+    this.setState({
+      seconds: breakSeconds,
+      break: true
+    })
   }
 
   render() {    
@@ -70,6 +121,7 @@ class Timer extends Component {
             <Col>
               <LogoSpin
                 isStarted={this.state.started}
+                switchMode={this.switchMode}
               />
             </Col>
           </Row>
@@ -98,7 +150,7 @@ class Timer extends Component {
         </Container>
 
         <Notification
-          send={this.state.send} 
+          send={this.state.sendNotification} 
           handleNotification={this.handleNotification} 
           />
       </div>

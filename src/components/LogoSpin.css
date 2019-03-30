@@ -1,10 +1,5 @@
-img {
-  pointer-events: none;
-}
-
 .App-logo {
     height: 25vmin;
-    pointer-events: none;
     filter: drop-shadow(0 0 0.50rem #f8ff9c);
     align-items: center;
     justify-content: center;
