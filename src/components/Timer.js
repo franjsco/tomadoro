@@ -93,7 +93,7 @@ class Timer extends Component {
 
 
   pomodoroMode() {
-    const pomodoroSeconds = 22;
+    const pomodoroSeconds = 1500;
     this.setState({
       seconds: pomodoroSeconds,
       break: false
@@ -101,7 +101,7 @@ class Timer extends Component {
   }
 
   breakMode() {
-    const breakSeconds = 5
+    const breakSeconds = 300
     this.setState({
       seconds: breakSeconds,
       break: true
