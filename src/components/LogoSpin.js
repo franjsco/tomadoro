@@ -14,6 +14,7 @@ class LogoSpin extends Component {
         className={`App-logo ${this.props.isStarted ? this.defaultClassName: ''}`}
         src={logo}
         alt="Tomato"
+        title="Click on the tomato to change modes"
         onClick={this.props.switchMode}
       ></img>
     )
