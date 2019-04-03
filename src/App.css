@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
 body {
-  background-color: #db4f4a;
+  background-color: #f04d3b; /* e74c3c */
   user-select: none;
+  font-family: 'Fredoka One', cursive;
+  color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .title {
-  font-size: 60px;
   font-weight: bold;
 }
 
@@ -14,17 +21,17 @@ body {
 }
 
 .App-header {
-  background-color: #c34944;
+  background-color: #c94233; /*c0392b*/
   display: flex;
-  min-height: 10vh;
+  min-height: 5vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(40px + 2vmin);
-  color: white;
-  text-shadow: 0 0 1px #ce2e2e, 0 0 10px rgb(193, 194, 190);
-  margin-bottom: 25px;
-  box-shadow: 0 0 2px #cf4242, 0 0 8px #2B2D1F;
+  font-size: calc(25px + 2vmin);
+  color: white;  
+  text-shadow: 0 0 1px #2b0f0f, 0 0 2px rgb(193, 194, 190);
+  margin-bottom: 20px;
+  box-shadow: 0 0 2px #cf4242, 0 0 6px #2B2D1F;
 
 }
 
@@ -37,6 +44,7 @@ a:hover {
 }
 
 .footer {
+  font-family: Arial, Helvetica, sans-serif;
   margin-top: 15px;
   color: #ffffff;
   text-shadow: 0 0 2px #cf4242, 0 0 3px rgb(193, 194, 190);

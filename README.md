@@ -7,6 +7,7 @@ Technologies:
 * HTML5 and CSS
 * JavaScript 
 * React.js
+* Bootstrap (reactstrap)
 
 ## Demo
 Try tomadoro: https://tomadoro.herokuapp.com/

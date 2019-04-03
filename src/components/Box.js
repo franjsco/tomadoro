@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import { Button, Row, Col } from 'reactstrap';
-import './ButtonBox.css';
+import './Box.css';
 
-class ButtonBox extends Component {
+class Box extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {};
   }
 
   render() {
     return (
-      <div className="button-box">
+      <div className="box">
         <Row>
-          <Col>
+          <Col xs="12">
             <Button
               className="button"
               block
@@ -25,13 +26,10 @@ class ButtonBox extends Component {
             </Button>
           </Col>
         </Row>
-        <Row
-          className="top-margin"
-        >
-          <Col>
+        <Row>
+          <Col xs="6" md="6">
             <Button
               className="button"
-              block
               color="danger"
               size="lg"
               onClick={this.props.stopTimer}
@@ -40,11 +38,9 @@ class ButtonBox extends Component {
               STOP
              </Button>
           </Col>
-
-          <Col>
+          <Col xs="6" md="6">
               <Button
                 className="button"
-                block
                 color="secondary"
                 size="lg"
                 onClick={this.props.resetTimer}
@@ -59,4 +55,4 @@ class ButtonBox extends Component {
       }
     }
     
-    export default ButtonBox;
+    export default Box;

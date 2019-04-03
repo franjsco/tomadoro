@@ -1,24 +1,6 @@
 .timer {
-    font-size: 120px; 
-    font-weight: 600;
-    text-shadow: 0 0 1px #ce2e2e, 0 0 8px rgb(193, 194, 190);
+    font-size: 100px; 
+    font-weight: normal;
+    text-shadow: 0 0 1px #4b4b4b, 0 0 5px rgb(193, 194, 190);
     color: white;
 }
-
-.buttons {
-    font-size: 20px;
-    font-weight: bold;
-    height: 60px;
-    border-radius: 25px;
-    box-shadow:  0 0 1px #161616, 0 0 10px rgb(133, 133, 133);
-}
-
-
-.button-box {
-    background-color: rgba(255, 255, 255, 1.0);
-    padding: 20px;
-    margin-top: 5px;
-    border-radius: 25px;
-    box-shadow:0 0 1px #111010, 0 0 10px rgb(193, 194, 190);
-}
-

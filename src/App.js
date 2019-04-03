@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Timer from './components/Timer';
-import ButtonBox from './components/ButtonBox';
 import './App.css';
 
 class App extends Component {
@@ -8,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <div
-          className="App-header title"
+          className="App-header"
         >
           tomadoro
         </div>

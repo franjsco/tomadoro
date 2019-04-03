@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
-import './LogoSpin.css';
+import logoSVG from '../logo.svg';
+import './Logo.css';
 
-class LogoSpin extends Component {
+class Logo extends Component {
   constructor(props) {
     super(props);
     this.defaultClassName = 'App-logo-rotation';
@@ -12,7 +12,7 @@ class LogoSpin extends Component {
     return (
       <img
         className={`App-logo ${this.props.isStarted ? this.defaultClassName: ''}`}
-        src={logo}
+        src={logoSVG}
         alt="Tomato"
         title="Click on the tomato to change modes"
         onClick={this.props.switchMode}
@@ -22,4 +22,4 @@ class LogoSpin extends Component {
 
 }
 
-export default LogoSpin;
+export default Logo;
