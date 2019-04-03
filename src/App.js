@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Timer from './components/Timer';
-import ButtonBox from './components/ButtonBox';
 import './App.css';
 
 class App extends Component {
