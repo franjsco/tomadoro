@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Notification from './Notification';
-import ButtonBox from './ButtonBox';
-import LogoSpin from './LogoSpin';
+import Box from './Box';
+import Logo from './Logo';
 import './Timer.css';
 
 class Timer extends Component {
@@ -119,13 +119,12 @@ class Timer extends Component {
         <Container>
           <Row>
             <Col>
-              <LogoSpin
+              <Logo
                 isStarted={this.state.started}
                 switchMode={this.switchMode}
               />
             </Col>
           </Row>
-
           <Row>
             <Col>
               <p
@@ -135,10 +134,9 @@ class Timer extends Component {
               </p>
             </Col>
           </Row>
-
           <Row>
-            <Col>
-              <ButtonBox
+            <Col md={{ size: 6, offset: 3 }}>
+              <Box
                 startTimer={this.startTimer}
                 stopTimer={this.stopTimer}
                 isStarted={this.state.started}

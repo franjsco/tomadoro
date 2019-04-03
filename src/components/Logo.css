@@ -1,16 +1,17 @@
 .App-logo {
-    height: 25vmin;
-    filter: drop-shadow(0 0 0.50rem #f8ff9c);
+    height: 130px;
+    filter: drop-shadow(0 0 0.30rem #f8ff9c);
     align-items: center;
     justify-content: center;
     text-align: center;
+    transition: all .3s ease-in-out;
 }
+
+.App-logo:hover { transform: scale(1.2); }
 
 .App-logo-rotation {
     animation: App-logo-spin infinite 5s linear;
   }
-
-
   
 @keyframes App-logo-spin {
     from {
