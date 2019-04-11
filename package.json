@@ -19,8 +19,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
+  "homepage": "http://frab1t.github.io/tomadoro",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -36,5 +39,7 @@
   },
   "author": "frab1t",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://github.com/frab1t/tomadoro#readme"
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
