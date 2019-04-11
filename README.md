@@ -10,7 +10,7 @@ Technologies:
 * Bootstrap (reactstrap)
 
 ## Demo
-Try tomadoro: https://tomadoro.herokuapp.com/
+Try tomadoro: https://frab1t.github.io/tomadoro/
 
 ## License
 GPLv3
