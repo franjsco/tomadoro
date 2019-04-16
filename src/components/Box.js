@@ -27,7 +27,7 @@ class Box extends Component {
           </Col>
         </Row>
         <Row>
-          <Col xs="6" md="6">
+          <Col xs="6">
             <Button
               className="button"
               color="danger"
@@ -38,7 +38,7 @@ class Box extends Component {
               STOP
              </Button>
           </Col>
-          <Col xs="6" md="6">
+          <Col xs="6">
               <Button
                 className="button"
                 color="secondary"
