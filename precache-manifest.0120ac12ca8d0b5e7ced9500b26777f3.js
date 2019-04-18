@@ -12,23 +12,23 @@ self.__precacheManifest = [
     "url": "/tomadoro/static/js/runtime~main.c4673ac0.js"
   },
   {
-    "revision": "0f98716f7aa0a3779edd",
-    "url": "/tomadoro/static/js/main.fa5d27bb.chunk.js"
+    "revision": "46bed4de588cf2bf8e03",
+    "url": "/tomadoro/static/js/main.0240a057.chunk.js"
   },
   {
-    "revision": "1833adb1901133b31eae",
-    "url": "/tomadoro/static/js/2.6c737709.chunk.js"
+    "revision": "c70673b3ea62ca226026",
+    "url": "/tomadoro/static/js/2.5dd04e40.chunk.js"
   },
   {
-    "revision": "0f98716f7aa0a3779edd",
-    "url": "/tomadoro/static/css/main.d0aea8b6.chunk.css"
+    "revision": "46bed4de588cf2bf8e03",
+    "url": "/tomadoro/static/css/main.db540e5e.chunk.css"
   },
   {
-    "revision": "1833adb1901133b31eae",
+    "revision": "c70673b3ea62ca226026",
     "url": "/tomadoro/static/css/2.e75e5890.chunk.css"
   },
   {
-    "revision": "f1c8a9441dad97b32a43a2f28ca4d689",
+    "revision": "7145b5ce18112eb56348b221865814d9",
     "url": "/tomadoro/index.html"
   }
 ];
