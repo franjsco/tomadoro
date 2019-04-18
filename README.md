@@ -1,7 +1,7 @@
-# tomadoro
+# tomadoro 🍅
 A timer based on the Pomodoro Technique
 
-![tomadoro screenshot](screenshot.png)
+![tomadoro screenshot](screenshot.png) 
 
 Technologies: 
 * HTML5 and CSS
