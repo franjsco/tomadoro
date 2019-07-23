@@ -10,10 +10,10 @@ Technologies:
 * Bootstrap (reactstrap)
 
 ## Demo
-Try tomadoro: https://frab1t.github.io/tomadoro/
+Try tomadoro: https://frsposito.github.io/tomadoro/
 
 ## License
 GPLv3
 
 ---
-Made with ❤️ by Francesco Esposito ([@frab1t](https://github.com/frab1t))
+Made with ❤️ by Francesco Esposito ([@frsposito](https://github.com/frsposito))

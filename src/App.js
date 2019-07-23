@@ -12,7 +12,7 @@ class App extends Component {
     this.appName = 'tomadoro';
     this.pomodoroSeconds = 1500;
     this.breakSeconds = 300;
-    
+
     this.state = {
       startClickNotification: false, // TODO: refactoring identificativo 
       seconds: 0,
@@ -43,11 +43,11 @@ class App extends Component {
 
   tick() {
     this.setState(state => ({
-      seconds: state.seconds -1
+      seconds: state.seconds - 1
     }));
 
     document.title = `(${this.formatMinute(this.state.seconds)}) ${this.appName}`;
-    
+
     if (this.state.seconds === 0) {
       this.stopTimer();
       this.terminatedTimer();
@@ -61,7 +61,7 @@ class App extends Component {
     });
 
     this.interval = setInterval(() => this.tick(), 1000);
-  } 
+  }
 
   stopTimer() {
     this.setState({
@@ -72,7 +72,7 @@ class App extends Component {
   }
 
   resetTimer() {
-    if(this.state.break) {
+    if (this.state.break) {
       this.breakMode();
     } else {
       this.pomodoroMode();
@@ -102,11 +102,11 @@ class App extends Component {
       break: true
     });
   }
-  
+
   switchMode() { // TODO: refactoring naming
-    if(this.state.break && !this.state.started) {
+    if (this.state.break && !this.state.started) {
       this.pomodoroMode();
-    } else if(!this.state.break && !this.state.started) {
+    } else if (!this.state.break && !this.state.started) {
       this.breakMode();
     }
   }
@@ -117,13 +117,13 @@ class App extends Component {
     });
   }
 
-  render() {    
+  render() {
     return (
       <div className="App">
         <div className="App-header">
           tomadoro
         </div>
-        
+
         <Container>
           <Row>
             <Col>
@@ -143,12 +143,12 @@ class App extends Component {
           </Row>
 
           <Row>
-            <Col 
-              sm={{size: 10, offset: 1}} 
-              md={{size: 8, offset: 2}} 
+            <Col
+              sm={{ size: 10, offset: 1 }}
+              md={{ size: 8, offset: 2 }}
               lg={{ size: 6, offset: 3 }}
             >
-              <Box 
+              <Box
                 startTimer={this.startTimer}
                 stopTimer={this.stopTimer}
                 isStarted={this.state.started}
@@ -160,16 +160,16 @@ class App extends Component {
         </Container>
 
         { // notification
-        this.state.startClickNotification ? (
-          <Notification 
-          send={this.state.sendNotification}
-          handleNotification={this.handleNotification} />) 
-        : ''}
+          this.state.startClickNotification ? (
+            <Notification
+              send={this.state.sendNotification}
+              handleNotification={this.handleNotification} />)
+            : ''}
 
         <div className="footer">
           <p>
-            <a href="https://github.com/frab1t/tomadoro">tomadoro</a>{` `}
-            by <a href="https://twitter.com/frab1t">@frab1t</a> (Francesco Esposito)
+            <a href="https://github.com/frsposito/tomadoro">tomadoro</a>{` `}
+            by <a href="https://github.com/frsposito">@frsposito</a> (Francesco Esposito)
           </p>
         </div>
       </div>
