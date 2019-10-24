@@ -1,17 +1,26 @@
 {
-  "main.css": "/tomadoro/static/css/main.4b6c45fe.chunk.css",
-  "main.js": "/tomadoro/static/js/main.5b904caa.chunk.js",
-  "main.js.map": "/tomadoro/static/js/main.5b904caa.chunk.js.map",
-  "runtime~main.js": "/tomadoro/static/js/runtime~main.c4673ac0.js",
-  "runtime~main.js.map": "/tomadoro/static/js/runtime~main.c4673ac0.js.map",
-  "static/css/2.75b542d6.chunk.css": "/tomadoro/static/css/2.75b542d6.chunk.css",
-  "static/js/2.5dd04e40.chunk.js": "/tomadoro/static/js/2.5dd04e40.chunk.js",
-  "static/js/2.5dd04e40.chunk.js.map": "/tomadoro/static/js/2.5dd04e40.chunk.js.map",
-  "index.html": "/tomadoro/index.html",
-  "precache-manifest.5824c1bbb2f6638447f83f37572f2945.js": "/tomadoro/precache-manifest.5824c1bbb2f6638447f83f37572f2945.js",
-  "service-worker.js": "/tomadoro/service-worker.js",
-  "static/css/2.75b542d6.chunk.css.map": "/tomadoro/static/css/2.75b542d6.chunk.css.map",
-  "static/css/main.4b6c45fe.chunk.css.map": "/tomadoro/static/css/main.4b6c45fe.chunk.css.map",
-  "static/media/logo.svg": "/tomadoro/static/media/logo.08ea9508.svg",
-  "static/media/sound.mp3": "/tomadoro/static/media/sound.ec792557.mp3"
+  "files": {
+    "main.css": "/tomadoro/static/css/main.b5bb2103.chunk.css",
+    "main.js": "/tomadoro/static/js/main.257e49c2.chunk.js",
+    "main.js.map": "/tomadoro/static/js/main.257e49c2.chunk.js.map",
+    "runtime-main.js": "/tomadoro/static/js/runtime-main.6dad65da.js",
+    "runtime-main.js.map": "/tomadoro/static/js/runtime-main.6dad65da.js.map",
+    "static/css/2.619dee99.chunk.css": "/tomadoro/static/css/2.619dee99.chunk.css",
+    "static/js/2.dfd5301c.chunk.js": "/tomadoro/static/js/2.dfd5301c.chunk.js",
+    "static/js/2.dfd5301c.chunk.js.map": "/tomadoro/static/js/2.dfd5301c.chunk.js.map",
+    "index.html": "/tomadoro/index.html",
+    "precache-manifest.086ec62b299434b22bdc5683ccf893c7.js": "/tomadoro/precache-manifest.086ec62b299434b22bdc5683ccf893c7.js",
+    "service-worker.js": "/tomadoro/service-worker.js",
+    "static/css/2.619dee99.chunk.css.map": "/tomadoro/static/css/2.619dee99.chunk.css.map",
+    "static/css/main.b5bb2103.chunk.css.map": "/tomadoro/static/css/main.b5bb2103.chunk.css.map",
+    "static/media/logo.svg": "/tomadoro/static/media/logo.08ea9508.svg",
+    "static/media/sound.mp3": "/tomadoro/static/media/sound.ec792557.mp3"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6dad65da.js",
+    "static/css/2.619dee99.chunk.css",
+    "static/js/2.dfd5301c.chunk.js",
+    "static/css/main.b5bb2103.chunk.css",
+    "static/js/main.257e49c2.chunk.js"
+  ]
 }
