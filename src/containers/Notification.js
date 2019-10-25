@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import WebNotification from 'react-web-notification';
-import sound from '../sound.mp3';
+import sound from '../assets/sound.mp3';
 
 class Notification extends Component {
   constructor(props) {

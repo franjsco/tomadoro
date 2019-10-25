@@ -1,27 +1,37 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Button, Row, Col } from 'reactstrap';
-import './Box.css';
+import PropTypes from 'prop-types';
 
-class Box extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const box = props => {
+  const buttonStyle = {
+    fontSize: '16px',
+    fontWeight: 'lighter',
+    height: '50px',
+    borderRadius: '30px',
+    width: '100%',
+    margin: '4px 0px 4px 0px'
+  };
 
-  render() {
-    return (
-      <div className="box">
+  const boxStyle = {
+    padding: '6px',
+    backgroundColor: 'white',
+    borderRadius: '6px',
+    borderBottom: '16px solid #c84132',
+    boxShadow: '0 2px 3px #8a8888'
+  };
+
+  return (
+    <div style={boxStyle}>
         <Row>
           <Col xs="12">
             <Button
-              className="button"
+              style={buttonStyle}
               block
               size="lg"
               color="success"
-              onClick={this.props.startTimer}
-              disabled={this.props.isStarted || this.props.seconds===0}
-            >
+              onClick={props.startButton}
+              disabled={props.isStarted || props.seconds===0}>
               START
             </Button>
           </Col>
@@ -29,30 +39,35 @@ class Box extends Component {
         <Row>
           <Col xs="6">
             <Button
-              className="button"
+              style={buttonStyle}
               color="danger"
               size="lg"
-              onClick={this.props.stopTimer}
-              disabled={!this.props.isStarted}
-            >
+              onClick={props.stopButton}
+              disabled={!props.isStarted}>
               STOP
              </Button>
           </Col>
           <Col xs="6">
               <Button
-                className="button"
+                style={buttonStyle}
                 color="secondary"
                 size="lg"
-                onClick={this.props.resetTimer}
-                disabled={this.props.isStarted}
-              >
+                onClick={props.resetButton}
+                disabled={props.isStarted}>
                 RESET
                 </Button>
             </Col>
         </Row>
       </div>
-        );
-      }
-    }
-    
-    export default Box;
+  );
+}
+
+box.propTypes = {
+  startButton: PropTypes.func.isRequired,
+  stopButton: PropTypes.func.isRequired,
+  resetButton: PropTypes.func.isRequired,
+  isStarted: PropTypes.bool.isRequired,
+  seconds: PropTypes.number.isRequired
+};
+
+export default box;

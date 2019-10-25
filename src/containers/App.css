@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+
+body {
+  background-color: #2e2929;
+  text-align: center;
+  color: #131313;
+  user-select: none;
+  font-family: 'Fredoka One', cursive;
+  color: white;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #f1fb61;
+}
+
+a:hover {
+  color: #fddec0;
+}

@@ -1,25 +1,26 @@
-import React, { Component } from 'react';
-import logoSVG from '../logo.svg';
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import logoSVG from '../assets/logo.svg';
 import './Logo.css';
 
-class Logo extends Component {
-  constructor(props) {
-    super(props);
-    this.defaultClassName = 'App-logo-rotation';
-    }
+const logo = props => {
+  const logoRotationClass = 'App-logo-rotation';
 
-  render() {
-    return (
-      <img
-        className={`App-logo ${this.props.isStarted ? this.defaultClassName: ''}`}
+  return (
+    <img 
+        className={`App-logo ${props.isStarted ? logoRotationClass: ''}`}
         src={logoSVG}
         alt="Tomato"
         title="Click on the tomato to change modes"
-        onClick={this.props.switchMode}
+        onClick={props.click} 
       ></img>
-    )
-  }
-
+  )
 }
 
-export default Logo;
+logo.propTypes = {
+  isStarted: PropTypes.bool.isRequired,
+  click: PropTypes.func.isRequired
+}; 
+
+export default logo;
