@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b3867754a60b11c6697f673ed8a957a",
+    "revision": "dddd4d63f929831534c76c98389ec758",
     "url": "/tomadoro/index.html"
   },
   {
@@ -8,15 +8,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tomadoro/static/css/2.619dee99.chunk.css"
   },
   {
-    "revision": "12e0b8f7a5330222acef",
-    "url": "/tomadoro/static/css/main.49e45a7b.chunk.css"
+    "revision": "9bd37f5646a0aaa5a51d",
+    "url": "/tomadoro/static/css/main.0061b05b.chunk.css"
   },
   {
     "revision": "3aa35ac144e96857120e",
     "url": "/tomadoro/static/js/2.dfd5301c.chunk.js"
   },
   {
-    "revision": "12e0b8f7a5330222acef",
+    "revision": "9bd37f5646a0aaa5a51d",
     "url": "/tomadoro/static/js/main.07f9db80.chunk.js"
   },
   {

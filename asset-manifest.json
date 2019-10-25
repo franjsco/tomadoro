@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tomadoro/static/css/main.49e45a7b.chunk.css",
+    "main.css": "/tomadoro/static/css/main.0061b05b.chunk.css",
     "main.js": "/tomadoro/static/js/main.07f9db80.chunk.js",
     "main.js.map": "/tomadoro/static/js/main.07f9db80.chunk.js.map",
     "runtime-main.js": "/tomadoro/static/js/runtime-main.6dad65da.js",
@@ -9,10 +9,10 @@
     "static/js/2.dfd5301c.chunk.js": "/tomadoro/static/js/2.dfd5301c.chunk.js",
     "static/js/2.dfd5301c.chunk.js.map": "/tomadoro/static/js/2.dfd5301c.chunk.js.map",
     "index.html": "/tomadoro/index.html",
-    "precache-manifest.d5ae655a045c31f2b1d593f5afdf1824.js": "/tomadoro/precache-manifest.d5ae655a045c31f2b1d593f5afdf1824.js",
+    "precache-manifest.13844772338e900fc31a902f2b03e8b4.js": "/tomadoro/precache-manifest.13844772338e900fc31a902f2b03e8b4.js",
     "service-worker.js": "/tomadoro/service-worker.js",
     "static/css/2.619dee99.chunk.css.map": "/tomadoro/static/css/2.619dee99.chunk.css.map",
-    "static/css/main.49e45a7b.chunk.css.map": "/tomadoro/static/css/main.49e45a7b.chunk.css.map",
+    "static/css/main.0061b05b.chunk.css.map": "/tomadoro/static/css/main.0061b05b.chunk.css.map",
     "static/media/logo.svg": "/tomadoro/static/media/logo.08ea9508.svg",
     "static/media/sound.mp3": "/tomadoro/static/media/sound.ec792557.mp3"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.6dad65da.js",
     "static/css/2.619dee99.chunk.css",
     "static/js/2.dfd5301c.chunk.js",
-    "static/css/main.49e45a7b.chunk.css",
+    "static/css/main.0061b05b.chunk.css",
     "static/js/main.07f9db80.chunk.js"
   ]
 }
