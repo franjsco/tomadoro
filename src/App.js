@@ -169,7 +169,7 @@ class App extends Component {
         <div className="footer">
           <p>
             <a href="https://github.com/frsposito/tomadoro">tomadoro</a>{` `}
-            by <a href="https://github.com/frsposito">@frsposito</a> (Francesco Esposito)
+            by <a href="https://github.com/frsposito">Francesco Esposito</a>
           </p>
         </div>
       </div>

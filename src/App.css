@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
 
 body {
-  background-color: #f04d3b; /* e74c3c */
+  background-color: #2e2929; /* e74c3c f04d3b  272222 */
   user-select: none;
   font-family: 'Fredoka One', cursive;
   color: white;
@@ -21,18 +21,16 @@ body {
 }
 
 .App-header {
-  background-color: #c94233; /*c0392b*/
   display: flex;
   min-height: 5vh;
   flex-direction: column;
+  text-align: 'left';
   align-items: center;
   justify-content: center;
-  font-size: calc(25px + 2vmin);
+  font-size: 44px;
   color: white;  
-  text-shadow: 0 0 1px #2b0f0f, 0 0 2px rgb(193, 194, 190);
-  margin-bottom: 20px;
-  box-shadow: 0 0 2px #cf4242, 0 0 6px #2B2D1F;
-
+  text-shadow:  0 2px 4px #909090; /* 909090 */
+  margin-bottom: 6px;
 }
 
 a {
@@ -45,15 +43,15 @@ a:hover {
 
 .footer {
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 15px;
+  margin-top: 8px;
   color: #ffffff;
-  text-shadow: 0 0 2px #cf4242, 0 0 3px rgb(193, 194, 190);
+  text-shadow:  0 2px 3px #a3a3a3;
 }
 
 
 .timer {
-  font-size: 100px; 
+  font-size: 110px; 
   font-weight: normal;
-  text-shadow: 0 0 1px #4b4b4b, 0 0 5px rgb(193, 194, 190);
-  color: white;
+  text-shadow:  0 2px 3px #8a8888; /*0 0 1px #4b4b4b, 0 0 5px rgb(193, 194, 190);  a3a3a3*/
+  color: #ffebeb;
 }
