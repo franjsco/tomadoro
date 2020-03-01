@@ -24,7 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "http://frsposito.github.io/tomadoro",
+  "homepage": "http://franjsco.github.io/tomadoro",
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -36,9 +36,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frsposito/tomadoro.git"
+    "url": "git+https://github.com/franjsco/tomadoro.git"
   },
-  "author": "frsposito",
+  "author": "franjsco",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
     "gh-pages": "^2.1.1"

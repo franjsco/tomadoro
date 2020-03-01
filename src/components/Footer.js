@@ -11,8 +11,8 @@ const footer = () => {
   return (
     <div style={style}>
       <p>
-        <a href="https://github.com/frsposito/tomadoro">tomadoro</a>{` `}
-        by <a href="https://github.com/frsposito">Francesco Esposito</a>
+        <a href="https://github.com/franjsco/tomadoro">tomadoro</a>{` `}
+        by <a href="https://github.com/franjsco">Francesco Esposito</a>
       </p>
     </div>
   );
