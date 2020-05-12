@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/tomadoro/static/css/main.7a728bbe.chunk.css",
-    "main.js": "/tomadoro/static/js/main.bca74514.chunk.js",
-    "main.js.map": "/tomadoro/static/js/main.bca74514.chunk.js.map",
+    "main.css": "/tomadoro/static/css/main.56b46eb7.chunk.css",
+    "main.js": "/tomadoro/static/js/main.e439782e.chunk.js",
+    "main.js.map": "/tomadoro/static/js/main.e439782e.chunk.js.map",
     "runtime-main.js": "/tomadoro/static/js/runtime-main.dc4cc38f.js",
     "runtime-main.js.map": "/tomadoro/static/js/runtime-main.dc4cc38f.js.map",
     "static/css/2.0161871a.chunk.css": "/tomadoro/static/css/2.0161871a.chunk.css",
-    "static/js/2.84d20a65.chunk.js": "/tomadoro/static/js/2.84d20a65.chunk.js",
-    "static/js/2.84d20a65.chunk.js.map": "/tomadoro/static/js/2.84d20a65.chunk.js.map",
+    "static/js/2.61321ac8.chunk.js": "/tomadoro/static/js/2.61321ac8.chunk.js",
+    "static/js/2.61321ac8.chunk.js.map": "/tomadoro/static/js/2.61321ac8.chunk.js.map",
     "index.html": "/tomadoro/index.html",
-    "precache-manifest.6ef5fc0089883fa31b23eb66e9ce5950.js": "/tomadoro/precache-manifest.6ef5fc0089883fa31b23eb66e9ce5950.js",
+    "precache-manifest.42d8ceb00fb35cb3117c85bc19a5535a.js": "/tomadoro/precache-manifest.42d8ceb00fb35cb3117c85bc19a5535a.js",
     "service-worker.js": "/tomadoro/service-worker.js",
     "static/css/2.0161871a.chunk.css.map": "/tomadoro/static/css/2.0161871a.chunk.css.map",
-    "static/css/main.7a728bbe.chunk.css.map": "/tomadoro/static/css/main.7a728bbe.chunk.css.map",
-    "static/js/2.84d20a65.chunk.js.LICENSE.txt": "/tomadoro/static/js/2.84d20a65.chunk.js.LICENSE.txt",
+    "static/css/main.56b46eb7.chunk.css.map": "/tomadoro/static/css/main.56b46eb7.chunk.css.map",
+    "static/js/2.61321ac8.chunk.js.LICENSE.txt": "/tomadoro/static/js/2.61321ac8.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/tomadoro/static/media/bg.501b9265.jpg",
     "static/media/logo.svg": "/tomadoro/static/media/logo.08ea9508.svg",
     "static/media/sound.mp3": "/tomadoro/static/media/sound.ec792557.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.dc4cc38f.js",
     "static/css/2.0161871a.chunk.css",
-    "static/js/2.84d20a65.chunk.js",
-    "static/css/main.7a728bbe.chunk.css",
-    "static/js/main.bca74514.chunk.js"
+    "static/js/2.61321ac8.chunk.js",
+    "static/css/main.56b46eb7.chunk.css",
+    "static/js/main.e439782e.chunk.js"
   ]
 }
