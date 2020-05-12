@@ -1,4 +1,4 @@
-<h1 align="center">Welcome to tomadoro 👋</h1>
+<h1 align="center">Welcome to tomadoro 🍅</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.7.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/franjsco/tomadoro/graphs/commit-activity" target="_blank">
@@ -26,9 +26,18 @@ npm install
 
 ## Usage
 
+**Development**
 ```sh
 npm run start
 ```
+
+**Production**
+```sh
+npm run build
+npm install -g serve
+serve -s build
+```
+Other Solutions: [here](https://create-react-app.dev/docs/deployment/)
 
 ## Author
 
@@ -43,9 +52,10 @@ npm run start
 Give a ⭐️ if this project helped you!
 
 ## 📝 License
-Photo by Zoltan Tasi on Unsplash
 Copyright © 2020 [franjsco (Francesco Esposito)](https://github.com/franjsco).<br />
 This project is [GPL--3.0--or--later](https://github.com/franjsco/tomadoro/blob/master/LICENSE) licensed.
+
+Photo by Zoltan Tasi on Unsplash
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
