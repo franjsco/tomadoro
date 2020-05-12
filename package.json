@@ -1,18 +1,18 @@
 {
   "name": "tomadoro",
   "description": "tomadoro",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "private": true,
   "engines": {
     "npm": "6.4.1",
     "node": "10.15.0"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
     "prop-types": "^15.7.2",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-scripts": "^3.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1",
     "react-web-notification": "^0.5.0",
     "reactstrap": "^7.1.0"
   },
@@ -41,6 +41,6 @@
   "author": "franjsco",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.2.0"
   }
 }

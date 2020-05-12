@@ -5,10 +5,9 @@ import { formatMinute } from '../utils';
 
 const timer = props => {
   const style = {
-    fontSize: "110px",
+    fontSize: "120px",
     fontWeight: "normal",
-    color: "white",
-    textShadow: "0 2px 3px #8a8888"
+    textShadow: "0 2px 2px #1f1f1f"
   };
 
   return (

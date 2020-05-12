@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
 
 body {
+  background-image: url('../assets/bg.jpg');
+  background-position: 'center';
+  background-size: cover;
   background-color: #2e2e2e;
   text-align: center;
-  color: #131313;
   user-select: none;
   font-family: 'Fredoka One', cursive;
   color: white;
@@ -14,9 +16,9 @@ body {
 }
 
 a {
-  color: #f1fb61;
+  color: #d45a45;
 }
 
 a:hover {
-  color: #fddec0;
+  color: #f6f6f3;
 }

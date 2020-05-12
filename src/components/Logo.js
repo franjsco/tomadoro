@@ -15,7 +15,7 @@ const logo = props => {
         title="Click on the tomato to change modes"
         onClick={props.click} 
       ></img>
-  )
+  );
 }
 
 logo.propTypes = {

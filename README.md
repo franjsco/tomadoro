@@ -16,4 +16,6 @@ Try tomadoro: https://franjsco.github.io/tomadoro/
 GPLv3
 
 ---
+Photo by Zoltan Tasi on Unsplash
+
 Made with ❤️ by Francesco Esposito ([@franjsco](https://github.com/franjsco))

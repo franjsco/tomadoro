@@ -1,29 +1,28 @@
 import React from 'react';
-import { Button, Row, Col } from 'reactstrap';
+import { Button, Row, Col, Card, CardBody } from 'reactstrap';
 import PropTypes from 'prop-types';
 
 
 const box = props => {
   const buttonStyle = {
-    fontSize: '16px',
-    fontWeight: 'lighter',
-    height: '50px',
-    borderRadius: '30px',
+    fontSize: '20px',
+    height: '54px',
+    borderRadius: '24px',
     width: '100%',
     margin: '4px 0px 4px 0px'
   };
 
   const boxStyle = {
-    padding: '6px',
-    backgroundColor: 'white',
-    borderRadius: '6px',
-    borderBottom: '16px solid #c84132',
-    boxShadow: '0 2px 3px #8a8888'
+    padding: '2px',
+    borderRadius: '14px',
+    background: 'rgb(0,0,0, 0.4)'
   };
 
+  
   return (
-    <div style={boxStyle}>
-        <Row>
+    <Card style={boxStyle}>
+      <CardBody>
+      <Row>
           <Col xs="12">
             <Button
               style={buttonStyle}
@@ -32,7 +31,7 @@ const box = props => {
               color="success"
               onClick={props.startButton}
               disabled={props.isStarted || props.seconds===0}>
-              START
+              Start
             </Button>
           </Col>
         </Row>
@@ -44,7 +43,7 @@ const box = props => {
               size="lg"
               onClick={props.stopButton}
               disabled={!props.isStarted}>
-              STOP
+              Stop
              </Button>
           </Col>
           <Col xs="6">
@@ -54,11 +53,12 @@ const box = props => {
                 size="lg"
                 onClick={props.resetButton}
                 disabled={props.isStarted}>
-                RESET
+                Reset
                 </Button>
             </Col>
         </Row>
-      </div>
+      </CardBody>
+    </Card>
   );
 }
 

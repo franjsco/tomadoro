@@ -2,10 +2,7 @@ import React from 'react';
 
 const footer = () => {
   const style = {
-    fontFamily: 'Arial, Helvetica, sans-serif',
-    marginTop: '8px',
-    color: '#ffffff',
-    textShadow: '0 2px 3px #a3a3a3'
+    marginTop: '2px'
   };
 
   return (
