@@ -16,7 +16,7 @@
 
 ### ✨ [Demo](https://franjsco.github.io/tomadoro/)
 
-![tomadoro screenshot](screenshot.png) 
+![tomadoro screenshot](screenshot.jpg) 
 
 ## Install
 
