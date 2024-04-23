@@ -41,6 +41,6 @@
   "author": "franjsco",
   "license": "GPL-3.0-or-later",
   "devDependencies": {
-    "gh-pages": "^2.2.0"
+    "gh-pages": "^5.0.0"
   }
 }
